@@ -2,9 +2,9 @@
 # Description: Read 3 integers N, M, SUM
 # Find total number of pairs that satisfy 
 # A + B == SUM where 
-# 1 <= A <= N  and 1 <= B <= 
+# 1 <= A <= N  and 1 <= B <= M
 
-# Brute force solution:
+# Brute force solution: O(n*n)
 '''
 n,m,sum = map(int, input().split())
 cnt =0
@@ -16,9 +16,22 @@ for i in range(1, n+1):
 
 print(cnt)
 '''
-###############################################
+##############################################
+# Creative solution: O(n)
+'''
+n,m,sum = map(int, input().split())
+cnt =0
 
-# Creative solution that take much less time and space
+for i in range(1, n+1):
+    j = sum - i
+    if j <= m and j >=1:    
+        cnt+=1
+
+print(cnt)
+'''
+###############################################
+# a more creative solution that takes much less time and space: O(1)
+
 n, m, sum = map(int,input().split())
 
 res = None
@@ -49,5 +62,3 @@ else:
             res = n
 
 print(res)
-
-    
