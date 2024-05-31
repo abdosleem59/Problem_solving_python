@@ -1,5 +1,6 @@
-# Read an integer N, then print an X mark using * 
-# where N always odd
+# Problem: Draw an X mark
+## Read an integer N, then print an X mark using * 
+## where N always odd
 
 ## First solution
 n =int(input())
