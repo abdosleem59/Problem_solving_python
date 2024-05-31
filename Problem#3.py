@@ -1,3 +1,20 @@
+# Read an integer N, then print an X mark using * 
+# where N always odd
+
+## First solution
+n =int(input())
+for i in range(n):
+    for j in range(n):
+        if i == j or n-i-1 == j:
+            print("*", end='')
+        else:
+            print(' ', end='')
+
+    print()
+
+###########################################
+## Another solution
+'''
 n = int(input())
 
 counter_above = n-2
@@ -18,11 +35,5 @@ for i in range(n):
         space1 = (n-i-1) * ' '
         space2 = (cntounter_down2) * ' '
         print(space1 + '*' + space2 + '*')
-        cntounter_down2+=2
-    
-        
-
-    
-    
-
-
+        cntounter_down2+=2 
+''' 
