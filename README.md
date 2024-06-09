@@ -1,8 +1,8 @@
 ## Problem solving
-Here are the problems that I solved in python.
+Here are the problems that I solved in Python.
 
-The description of problems wrote it in the begging of the code.
+The description of problems is written at the beginning of the code.
 
-Some of them problems solved in multiple solutions that differ in time complexity for more efficient code.
+These problems are solved in multiple solutions that differ in time complexity for more efficient code.
 
 Thanks.
