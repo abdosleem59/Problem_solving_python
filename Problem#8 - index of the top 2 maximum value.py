@@ -34,10 +34,8 @@ for i, item in enumerate(lst):
     if item>lst[idx_max_val_1]:
         idx_max_val_2 = idx_max_val_1
         idx_max_val_1 = i
-
     # check if the index of 2nd max value is correct or not
-    if item < lst[idx_max_val_1]:
-        if lst[idx_max_val_2]<item:
+    elif lst[idx_max_val_2]<item:
             idx_max_val_2 = i
     
     
