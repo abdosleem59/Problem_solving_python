@@ -28,15 +28,18 @@ print(idx2)
 lst = list(map(int, input().split()))
 
 idx_max_val_1 = 0 
-idx_max_val_2 = 0
-for i, item in enumerate(lst):
-    
-    if item>lst[idx_max_val_1]:
+idx_max_val_2 = 1
+if lst[idx_max_val_1]< lst[idx_max_val_2]:
+     idx_max_val_1, idx_max_val_2 = 1,0
+
+for cur_pos in range(2, len(lst)):
+
+    if lst[cur_pos]>lst[idx_max_val_1]:
         idx_max_val_2 = idx_max_val_1
-        idx_max_val_1 = i
+        idx_max_val_1 = cur_pos
     # check if the index of 2nd max value is correct or not
-    elif lst[idx_max_val_2]<item:
-            idx_max_val_2 = i
+    elif lst[idx_max_val_2]<lst[cur_pos]:
+            idx_max_val_2 = cur_pos
     
     
 
