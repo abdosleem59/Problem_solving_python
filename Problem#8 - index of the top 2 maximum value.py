@@ -1,4 +1,5 @@
-##
+# Problem: Find the index of the top 2 maximum value
+
 '''
 # Slow solution
 lst = list(map(int, input().split()))
