@@ -43,5 +43,3 @@ for i, item in enumerate(lst):
     
 
 print(idx_max_val_1, idx_max_val_2)
-
-
