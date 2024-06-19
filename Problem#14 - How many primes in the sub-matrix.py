@@ -16,11 +16,11 @@ def read_matrix():
     return rows, len(lst_of_lsts[0]), lst_of_lsts
 
 def is_prime(n):
-    if n == 1:
+    if n <= 1:
         return False
     elif n == 2:
         return True
-    elif n % 2 == 0:
+    elif n % 2 == 0
         return False
     else:
         for i in range(3, n, 2):
